@@ -8,11 +8,11 @@ USE entreprise;
 
 CREATE TABLE EMPLOYE (
     idEmploye Int Auto_increment NOT NULL,
-    nom Varchar (50) NULL,
-    prenom Varchar (25) NULL,
-    sexe Char (1) NULL,
-    service Varchar (25) NULL,
+    nom Varchar (50) NOT NULL,
+    prenom Varchar (25) NOT NULL,
+    sexe Char (1) NOT NULL,
+    service Varchar (25) NOT NULL,
     salaire Int NULL,
     dateEmbauche Date,
-    CONSTRAINT EMPLOYE-PK PRIMARY KEY (idEmploye),
+    CONSTRAINT EMPLOYE-PK PRIMARY KEY (idEmploye)
 )ENGINE=InnoDB;
